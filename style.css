@@ -1,0 +1,126 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+    font-family: sans-serif;
+    background-color:#0c165f;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color:#008500;	
+    color:white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    padding: 25px 100px 25px 95px;
+    justify-content: space-between;
+}
+
+.nav-link {
+    font-size: 24px;
+    color:white;
+    text-decoration: none;
+}
+.nav-link:hover{
+  color: green;
+}
+h1 {
+    text-align: center;
+    color:white;
+    font-size: 36px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 24px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin: 0px;
+}
+
+article {
+    padding: 25px;
+    width: 400px;
+    margin: 50px;
+
+  border-radius: 20px; 
+    /*1. Напівпрозорий білий фон*/
+    background: rgba(255, 255, 255, 0.2);
+    /*2. Ефект розмиття фону (матове скло)*/
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /*Тонка напівпрозора межа (імітація відблиску на грані скла)*/
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /*легка тінь для відриву картки від фону*/
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: white;
+    font-family:Arial, sans-serif;
+}
+
+article::before{
+  content: url("candy.png");
+  display:block;
+  opacity:0.5;
+  position: relative;
+  left: 90%;
+  bottom:10%;
+}
+article:hover::before{
+  opacity: 1;
+}
+.article-but {
+    text-decoration: none;
+    background-color: grey;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 75px 10px 75px;
+}
+aside{
+  position: fixed;
+  right: 50px;
+  top:40%;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 20px;
+  font-size: 40px;
+  padding: 10px;
+  color: white;
+}
+footer {
+    display: flex;
+    background-color: #AC13A6;
+    padding: 25px;
+  color: white;
+}
+
+footer a {
+    margin-right: 25px;
+}
+
+footer p {
+    font-size: 24px;
+}
+
+ 
