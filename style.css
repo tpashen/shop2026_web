@@ -6,33 +6,36 @@ body {
     font-family: sans-serif;
     background-color:#0c165f;
 }
+header{
+ position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  overflow: hidden; 
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center; 
+  background-image: url('fon.jpg');
+  background-size: cover;
+  background-position: center;
 
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 350px;
-    overflow: hidden; 
-    
-    padding: 30px;
-    text-align: center;
-    padding: 25px;
-    margin-bottom: 20px;
-  background-image: url('fon (2).jpg');
+  filter: brightness(0.4);
+  z-index: -1;
+  color: #ffffff; 
+  font-family: sans-serif;
+}
+
+
+
+header::before {
   position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('bgphoto.jpg');
-    background-size: cover;
-    background-position: center;
-  
-  /* Застосовуємо фільтр затемнення ТІЛЬКИ до цього шару-фону */
-   filter: brightness(0.4);
-  /* Відправляємо фон на задній план, під текст */
-   
-    z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ 
+
 }
 
 .button {
@@ -58,7 +61,7 @@ header {
 }
 
 nav {
-    display: flex;
+    display: block;
     border-top: 5px solid white;
     border-bottom: 5px solid white;
     padding: 25px 100px 25px 95px;
@@ -66,21 +69,37 @@ nav {
 }
 
 .nav-link {
-    font-size: 24px;
-    color:white;
-    text-decoration: none;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10rem;
+  transition: all 0.02s;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
 }
 .nav-link:hover{
-  color: green;
+  background: rgb(193, 228, 248);
+  color: rgb(33, 0, 85);
 }
 h1 {
     text-align: center;
     color:white;
-    font-size: 36px;
+    font-size: 50px;
     margin-top: 25px;
     margin-bottom: 25px;
 }
-
+h2{
+  color:white;
+    font-size: 36px;
+}
 p {
     font-size: 24px;
 }
@@ -103,6 +122,7 @@ p {
     padding: 25px;
     width: 400px;
     margin: 50px;
+    text-align: center;
 
   border-radius: 20px; 
     /*1. Напівпрозорий білий фон*/
@@ -116,8 +136,12 @@ p {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     color: white;
     font-family:Arial, sans-serif;
+    
 }
-
+.product-card img{
+  display: block;
+  width: 200px;
+}
 article::before{
   content: url("candy.png");
   display:block;
