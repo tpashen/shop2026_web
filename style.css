@@ -38,6 +38,13 @@ header::before {
 
 }
 
+.logo{
+  width: 100px;
+  position: absolute;
+  left:5%;
+  top: 5%;
+}
+
 .button {
     background-color:#008500;	
     
