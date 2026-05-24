@@ -92,7 +92,7 @@ p {
     margin: 0px;
 }
 
-article {
+.product-card {
     padding: 25px;
     width: 400px;
     margin: 50px;
