@@ -91,7 +91,14 @@ p {
     width: 1100px;
     margin: 0px;
 }
-
+.product-container{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background: linear-gradient(135deg, #ff007f, #7f00ff);
+    padding: 20px;
+}
 .product-card {
     padding: 25px;
     width: 400px;
