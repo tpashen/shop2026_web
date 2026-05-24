@@ -9,9 +9,30 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    overflow: hidden; 
+    
+    padding: 30px;
+    text-align: center;
     padding: 25px;
     margin-bottom: 20px;
+  background-image: url('fon (2).jpg');
+  position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('bgphoto.jpg');
+    background-size: cover;
+    background-position: center;
+  
+  /* Застосовуємо фільтр затемнення ТІЛЬКИ до цього шару-фону */
+   filter: brightness(0.4);
+  /* Відправляємо фон на задній план, під текст */
+   
+    z-index: -1;
 }
 
 .button {
